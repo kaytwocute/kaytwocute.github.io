@@ -32,6 +32,7 @@
   <p>hii! guys its kaliyah dont be shy say hii back</p>
     <input id="Name" type="name" placeholder="Your name">
   <input id="Email" type="email" placeholder="Your email">
+  <input id="food" placeholder="whats your favorite food?" style="width:220px;">
   <input id="submit" type="submit">
   
   
@@ -63,6 +64,10 @@
 	
 	const Name = document.querySelector("#Name") 
 	const Email = document.querySelector("#Email")
+	
+	const food = document.querySelector("#food")
+
+	
 	document.querySelector('#submit').addEventListener('click', Submit)
 
 	function Submit() {
@@ -71,12 +76,14 @@
 	  set(ref(db, timestamp), {
 		  Name: Name.value,
 	      email: Email.value,
+		   food: food.value,
 	  });
 
 	  Name.value = ""
 	  Email.value = ""
+	  food.value = ""
 	}
-
+s
 
 	function buildTimestamp() {
 	  const now = new Date();
