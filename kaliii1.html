@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Borel&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Borel&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Borel&family=Merienda:wght@300..900&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bokor&family=Borel&family=Meow+Script&family=Merienda:wght@300..900&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Sevillana&family=Yatra+One&display=swap" rel="stylesheet">
+
+<style>
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  background: pink;
+}
+div {
+  height: 300px;
+  background-size: cover;
+  position: relative;
+  margin: 40px 0 0 0;
+  border-radius: 12px;
+}
+h1 {
+  font-family: "Borel", cursive;
+  text-align: center;
+  font-size: 75px;
+  color: purple;
+  margin: 60px 0 0 0;
+}
+h2 {
+  text-align: center;
+  color: yellow;
+  margin: 0px 0 70px 0;
+   font-family: "Merienda", cursive;
+}
+p {
+  color:pink;
+  background: pink;
+  background: linear-gradient(bottom, rgba(100,100,200,1), rgba(0,0,0,.4));
+  background: -webkit-linear-gradient(bottom, rgba(100,100,200,1), rgba(0,0,0,.4));
+  background: -moz-linear-gradient(bottom, rgba(0,0,0,1), rgba(0,0,0,.4));
+  padding: 10px;
+  line-height: 28px;
+  text-align: justify;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  height: 30px;
+  transition: height .5s;
+ font-family: "Yatra One", system-ui;
+}
+
+small {
+  opacity: 0;
+}
+
+.show-description p {
+  height: 150px;
+}
+
+.show-description small {
+  opacity: 1;
+}
+
+.first{
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvS1KMtae8KiW9NvB2ZtiU_Ae7o_aSs_Kmqw&s");
+}
+.second{
+  background-image: url("https://preview.redd.it/d7awu51wppm51.jpg?width=640&crop=smart&auto=webp&s=6fb35e5864d9cb1182bffaa1a41b156d9c38943c");
+}
+.dessert{
+  background-image: url("https://i.pinimg.com/originals/56/c9/b6/56c9b6f7c5554d4949853a80db2f921c.gif");
+}
+.dango{
+	background-image: url("https://japanbite.com/cdn/shop/articles/1_1aa79b00-0e2b-4750-a40f-7c80c45e9a73.jpg?v=1716019143");
+}
+
+.price {
+  float: right;
+}
+input {
+font-size: 22px;
+}
+
+
+
+
+@media (max-width: 500px) {
+  h1 {
+     font-family: "Parkinsans", sans-serif;
+    font-size: 50px;
+    margin-top: 20px;
+    line-height: 40px;
+  }
+  h2 {
+    font-size: 20px;
+    margin: 20px 0 30px 0;
+       
+  }
+  div {
+    margin: 20px 12px 0 12px;
+  }
+  p {
+    font-size: 20px;
+    line-height: 24px;
+  }
+  small {
+    font-size: 16px;
+  }
+}
+
+</style>
+
+</head>
+
+<body>
+<h1>liyah's restaurant</h1>
+<h2>a New York City pastery</h2>
+<div class="first">
+	<input class="quantities" type="number" min="0" style="width: 50px">
+  <p>Mochi donuts <span class="price">$16</span><br />
+  <small> a slightly sweet taste on their own. This hybrid between American doughnuts and Japanese mochi is tasted bouncy, slightly chewy with an airy texture in the center and a crisp outer shell. The secret  </small></p>
+</div>
+
+<div class="second">
+	<input class="quantities" type="number" min="0" style="width: 50px">
+  <p>puff pastery <span class="price">$20</span><br />
+  <small> a light and flaky pastry made from a laminated dough, or dough that is made by alternating layers of butter and dough. The only ingredients used to make puff pastry are butter, salt, water, and flour — no leave</small></p>
+</div>
+  
+<div class="dessert">
+	<input class="quantities"type="number" min="0" style="width: 50px">
+  <p>strawberry sandwich <span class="price">$10</span><br />
+  <small>Japanese  Strawberry Sandwiches are made with a fluffy  sponge cake and filled with delicious vanilla whipped cream and fresh strawberries. Soft and fluffy like a pillow.</small></p>
+</div>
+
+
+<div class="dango">
+	<input class="quantities"type="number" min="0" style="width: 50px">
+  <p>dango <span class="price">$5</span><br />
+  <small>Plain dango balls tastes like sweet rice. It sounds boring, but what makes this Japanese dessert so special is the texture. Chewy, tender, soft but still firm and toothsome.</small></p>
+</div>
+
+
+    <br><br>
+    <input id="Name" type="name" placeholder="Your name">
+  <input id="Email" type="email" placeholder="Your email">
+  <input id="submit" type="submit">
+  <br><br>
+
+
+<script>
+  $('div').on('click', function() {
+      $(this).toggleClass('show-description');
+  });
+</script>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+  import { getDatabase, ref, set } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-database.js";
+  
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyB3WPoCInWudW3mgpYqIY8_M3kXwrMH6mY",
+    authDomain: "kaliyahm-b6cb1.firebaseapp.com",
+    databaseURL: "https://kaliyahm-b6cb1-default-rtdb.firebaseio.com",
+    projectId: "kaliyahm-b6cb1",
+    storageBucket: "kaliyahm-b6cb1.firebasestorage.app",
+    messagingSenderId: "541230800781",
+    appId: "1:541230800781:web:f8c30f92382018235f27c4",
+    measurementId: "G-HDZHFMXX4Y"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const db = getDatabase(app);
+  
+const Name = document.querySelector("#Name") 
+const Email = document.querySelector("#Email")
+document.querySelector('#submit').addEventListener('click', Submit)
+const itemsList = ["mochi", "puff", "strawberry", "dango"]
+const quantities = document.querySelectorAll(".quantities") 
+   const prices = document.querySelectorAll(".price") 
+
+
+
+function Submit() {
+    const timestamp = buildTimestamp()
+	let cart = { }
+    let total = 0
+	for  (let i=0; i<quantities.length; i=i+1) {
+	  if (quantities[i].value != "0" && quantities[i].value != "") {	
+		let price = prices[i].innerHTML.replace('$', '')
+		total = total + quantities[i].value * price 
+	    cart[itemsList[i]] = parseInt(quantities[i].value) 
+	  }
+	  quantities[i].value = ""
+	}
+	
+  
+  set(ref(db, timestamp), {
+	  Name: Name.value,
+      email: Email.value,
+	  cart: cart, 
+      totalPrice: total,
+      paid: "not yet",
+
+  });
+
+  Name.value = ""
+  Email.value = ""
+}
+  
+function buildTimestamp() {
+  const now = new Date();
+  let timestamp = now.getFullYear().toString() + "/";
+  //const month = now.toLocaleString('default', { month: 'long' });
+
+  let month = now.getMonth()+1   //add 1 because Javascript uses 0 for January
+  month = month.toString()
+  month = addLeadingZero(month)
+  timestamp += month + "/"; 
+
+  let date = now.getDate().toString()
+  date = addLeadingZero(date)
+  timestamp += date + "/";
+
+  let hours = now.getHours().toString()
+  hours = addLeadingZero(hours)
+  timestamp += hours + ":";
+
+  let minutes = now.getMinutes().toString()
+  minutes = addLeadingZero(minutes)
+  timestamp += minutes + ":";
+
+  let seconds = now.getSeconds().toString()
+  seconds = addLeadingZero(seconds)
+  timestamp += seconds;
+
+  return timestamp
+}
+
+function addLeadingZero(units) {
+	if (units.length < 2) {
+		units = "0" + units
+	}
+	return units
+}
+
+
+
+</script>
+</body>
